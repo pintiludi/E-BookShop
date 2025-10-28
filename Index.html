@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Loja Digital</title>
+<style>
+/* Reset e fontes */
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
+body { background: linear-gradient(135deg, #0f0f0f, #1c1c1c); color:#fff; }
+a { text-decoration: none; color: inherit; }
+
+/* Container principal */
+.container { max-width:1200px; margin:50px auto; padding:20px; }
+
+/* Título */
+h1 { 
+  text-align:center; 
+  font-size:2.5em; 
+  margin-bottom:40px; 
+  background: -webkit-linear-gradient(#fff, #aaa);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+}
+
+/* Grid de produtos */
+.grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:25px; }
+
+/* Card do produto */
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius:15px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-5px);
+}
+
+.card h2 { font-size:1.5em; margin-bottom:15px; color:#fff; }
+.card p { font-size:0.95em; margin-bottom:20px; color:#ccc; }
+
+/* Botão */
+.btn {
+  background: linear-gradient(90deg,#ffcc00,#ffffff);
+  color:#000;
+  padding:12px;
+  text-align:center;
+  border-radius:10px;
+  font-weight:bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg,#fff,#ffcc00);
+  color:#000;
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+@media(max-width:600px){
+  h1 { font-size:2em; }
+  .card h2 { font-size:1.3em; }
+  .btn { padding:10px; font-size:0.95em; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Minha Loja Digital</h1>
+  <div class="grid">
+    <div class="card">
+      <h2>Manual do Empreendedor Digital</h2>
+      <p>Aprenda a transformar ideias em negócios digitais lucrativos e escaláveis.</p>
+      <a href="https://pay.kiwify.com.br/apIP7hR" class="btn" target="_blank">Acessar Produto</a>
+    </div>
+    <div class="card">
+      <h2>Como Economizar Com Sabedoria e Fazer Seu Patrimônio</h2>
+      <p>Descubra métodos inteligentes de economia e estratégias para multiplicar seu patrimônio.</p>
+      <a href="https://pay.kiwify.com.br/A1UKpbJ" class="btn" target="_blank">Acessar Produto</a>
+    </div>
+    <div class="card">
+      <h2>Como Transformar 1R$ em 1.000.000R$</h2>
+      <p>Aprenda passo a passo como multiplicar seu dinheiro de forma estratégica e prática.</p>
+      <a href="https://pay.kiwify.com.br/qQ64ohk" class="btn" target="_blank">Acessar Produto</a>
+    </div>
+    <div class="card">
+      <h2>Como Fazer Dinheiro 100% no Orgânico</h2>
+      <p>Descubra técnicas de crescimento orgânico e geração de renda sem investimentos pagos.</p>
+      <a href="https://pay.kiwify.com.br/luV6nJQ" class="btn" target="_blank">Acessar Produto</a>
+    </div>
+    <div class="card">
+      <h2>Mentalidade de Rico</h2>
+      <p>Transforme sua mentalidade e hábitos para pensar, agir e crescer como os grandes investidores.</p>
+      <a href="https://pay.kiwify.com.br/tI61JtX" class="btn" target="_blank">Acessar Produto</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
